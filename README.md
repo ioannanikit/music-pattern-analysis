@@ -2,7 +2,6 @@
 
 An end-to-end Data Science project in Python that explores statistical correlations between audio features (such as energy, loudness, valence, and tempo) and utilizes Unsupervised Machine Learning to automatically categorize songs into distinct mood-based playlists.
 
----
 
 ## Key Insights & Exploratory Data Analysis (EDA)
 
@@ -11,7 +10,6 @@ Before training the clustering model, an extensive Exploratory Data Analysis was
 * **Energy vs. Acousticness (-0.73):** A powerful inverse correlation, successfully differentiating organic/acoustic arrangements from high-tempo electronic, rock, or pop genres.
 * **Danceability vs. Valence (+0.48):** A moderate positive correlation indicating that rhythmic, highly danceable tracks frequently express happier or more positive emotional tones.
 
----
 
 ## Tech Stack & Libraries Used
 
@@ -20,7 +18,6 @@ Before training the clustering model, an extensive Exploratory Data Analysis was
 * **Data Visualization:** Seaborn, Matplotlib
 * **Machine Learning:** Scikit-Learn (`KMeans`, `StandardScaler`)
 
----
 
 ## Methodology & Machine Learning Pipeline
 
@@ -28,7 +25,6 @@ Before training the clustering model, an extensive Exploratory Data Analysis was
 2. **Feature Scaling:** Applied `StandardScaler` to normalize the data distributions, ensuring that features with higher absolute values (like Tempo in BPM) do not disproportionately bias the clustering distance metrics.
 3. **Clustering Algorithm:** Implemented **K-Means Clustering** ($k=4$) to partition the high-dimensional musical space into 4 homogeneous cohorts.
 
----
 
 ## Generated Playlist Profiles (Results)
 
@@ -41,4 +37,3 @@ The K-Means model successfully engineered 4 distinct "musical personalities" bas
 | **Cluster 2** |  **Chill / Study Session** | 0.36 | 0.26 | 0.22 | 103.4 | Acoustic, Indie Ballads, Ambient |
 | **Cluster 3** |  **Late Night Grooves** | 0.64 | 0.57 | 0.39 | 107.5 | R&B, Hip-Hop, Smooth Funk |
 
----
